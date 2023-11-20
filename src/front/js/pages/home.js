@@ -17,18 +17,15 @@ export const Home = () => {
 
 	return (
 		<div className="text-center">
-			<div className="pseudo-nav" style={{ color: 'white ' }}>
-				<h1>Unlocking IT Salaries</h1>
-				<p>
-					<img src={rigoImageUrl} />
-				</p>
+			<div className="pseudo-nav" style={{ color: 'white ', paddingBottom: '20px' }}>
+				<h1 style={{ paddingTop: '30px', paddingBottom: '30px' }}>Unlocking IT Salaries</h1>
 
 				<Link to="/adminView">
-					<button type="button">Admin View</button>
+					<button type="button" style={{ padding: '30px', marginRight: '15px', backgroundColor: 'black', color: 'white' }}>Admin View</button>
 				</Link>
 
 				<Link to="/chargeCompany">
-					<button type="button">Charge Company</button>
+					<button type="button" style={{ padding: '30px', backgroundColor: 'black', color: 'white' }}>Charge Company</button>
 				</Link>
 
 			</div>
