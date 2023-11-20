@@ -192,7 +192,7 @@ function EnhancedTableToolbar(props) {
           id="tableTitle"
           component="div"
         >
-          Nutrition
+          Admin_View
         </Typography>
       )}
 
