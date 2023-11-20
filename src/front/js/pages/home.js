@@ -25,7 +25,15 @@ export const Home = () => {
 				</Link>
 
 				<Link to="/chargeCompany">
-					<button type="button" style={{ padding: '30px', backgroundColor: 'black', color: 'white' }}>Charge Company</button>
+					<button type="button" style={{ padding: '30px', marginRight: '15px', backgroundColor: 'black', color: 'white' }}>Charge Company</button>
+				</Link>
+
+				<Link to="/login">
+					<button type="button" style={{ padding: '30px', marginRight: '15px', backgroundColor: 'black', color: 'white' }}>Login</button>
+				</Link>
+
+				<Link to="/register">
+					<button type="button" style={{ padding: '30px', backgroundColor: 'black', color: 'white' }}>Register</button>
 				</Link>
 
 			</div>

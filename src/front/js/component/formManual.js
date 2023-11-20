@@ -14,22 +14,22 @@ export const FormManual = () => {
 
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Ciudad</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" />
+                    <input type="text" className="form-control" id="exampleInputPassword1" />
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Nombre Rol</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" />
+                    <input type="text" className="form-control" id="exampleInputPassword1" />
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Categoría del Rol</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" />
+                    <input type="text" className="form-control" id="exampleInputPassword1" />
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="exampleInputPassword1" className="form-label">Años de experiencia</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" />
+                    <input type="text" className="form-control" id="exampleInputPassword1" />
                 </div>
 
 

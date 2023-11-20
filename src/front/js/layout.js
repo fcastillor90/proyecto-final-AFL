@@ -6,9 +6,12 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
-import { FormOptions } from "./component/formOptions"; //Lili
+// Lili
+import { FormOptions } from "./component/formOptions";
 import { FormPdf } from "./component/formPdf";
 import { FormManual } from "./component/formManual";
+import { Login } from "./component/login";
+import { Register } from "./component/register";
 // importar componentes de Fernando
 import { AdminView } from "./component/adminView";
 import ChargeCompany from "./component/chargeCompany";
@@ -33,6 +36,8 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
+                        <Route element={<Login />} path="/login" />
+                        <Route element={<Register />} path="/register" />
                         <Route element={<FormOptions />} path="/formOptions" />
                         <Route element={<FormPdf />} path="/formPdf" />
                         <Route element={<FormManual />} path="/formManual" />
