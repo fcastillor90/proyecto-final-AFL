@@ -15,11 +15,13 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
+		<div className="text-center">
+			<div className="pseudo-nav" style={{ color: 'white '}}>
+				<h1>Unlocking IT Salaries</h1>
+				<p>
+					<img src={rigoImageUrl} />
+				</p>
+			</div>
 			<div className="alert alert-info">
 				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
 			</div>
@@ -81,24 +83,24 @@ export default function BasicTabs() {
 
 	return (
 		<div className="ms-5">
-		<Box sx={{ width: '100%', margin: 'auto' }}>
-			<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-				<Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-					<Tab label="Item One" {...a11yProps(0)} />
-					<Tab label="Item Two" {...a11yProps(1)} />
-					<Tab label="Item Three" {...a11yProps(2)} />
-				</Tabs>
+			<Box sx={{ width: '100%', margin: 'auto' }}>
+				<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+					<Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+						<Tab label="Item One" {...a11yProps(0)} />
+						<Tab label="Item Two" {...a11yProps(1)} />
+						<Tab label="Item Three" {...a11yProps(2)} />
+					</Tabs>
+				</Box>
+				<CustomTabPanel value={value} index={0}>
+					Item One
+				</CustomTabPanel>
+				<CustomTabPanel value={value} index={1}>
+					Item Two
+				</CustomTabPanel>
+				<CustomTabPanel value={value} index={2}>
+					Item Three
+				</CustomTabPanel>
 			</Box>
-			<CustomTabPanel value={value} index={0}>
-				Item One
-			</CustomTabPanel>
-			<CustomTabPanel value={value} index={1}>
-				Item Two
-			</CustomTabPanel>
-			<CustomTabPanel value={value} index={2}>
-				Item Three
-			</CustomTabPanel>
-		</Box>
 		</div>
 	);
 }
