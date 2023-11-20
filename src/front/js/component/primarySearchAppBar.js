@@ -16,7 +16,6 @@ import PublicIcon from '@mui/icons-material/Public';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import Button from '@mui/material/Button';
 
 const Search = styled('div')(({ theme }) => ({
 	position: 'relative',
@@ -168,9 +167,9 @@ export default function PrimarySearchAppBar() {
 					<Box sx={{ flexGrow: 1 }} />
 					<Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 						<Link to="/formOptions">
-							<Button type="button" variant="contained" style={{ backgroundColor: '#4f89ee', color: 'black', borderRadius: '30px', marginTop: '5px' }}>
+							<button type="button" variant="contained" style={{ backgroundColor: '#4f89ee', color: 'black', borderRadius: '30px', marginTop: '5px' }}>
 								Subir salario
-							</Button>
+							</button>
 						</Link>
 						<IconButton
 							size="large"

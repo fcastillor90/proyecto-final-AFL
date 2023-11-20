@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from 'react-router-dom';
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
@@ -16,11 +17,20 @@ export const Home = () => {
 
 	return (
 		<div className="text-center">
-			<div className="pseudo-nav" style={{ color: 'white '}}>
+			<div className="pseudo-nav" style={{ color: 'white ' }}>
 				<h1>Unlocking IT Salaries</h1>
 				<p>
 					<img src={rigoImageUrl} />
 				</p>
+
+				<Link to="/formOptions">
+					<button type="button">Admin View</button>
+				</Link>
+
+				<Link to="/formOptions">
+					<button type="button">Charge Company</button>
+				</Link>
+
 			</div>
 			<div className="alert alert-info">
 				{store.message || "Loading message from the backend (make sure your python backend is running)..."}

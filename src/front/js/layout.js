@@ -6,7 +6,8 @@ import { BackendURL } from "./component/backendURL";
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
-import { FormOptions } from "./component/formOptions";
+import { FormOptions } from "./component/formOptions"; //Lili
+// importar componentes de Fernando
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
