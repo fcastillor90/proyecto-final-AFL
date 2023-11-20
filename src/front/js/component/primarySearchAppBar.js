@@ -168,7 +168,7 @@ export default function PrimarySearchAppBar() {
 					<Box sx={{ flexGrow: 1 }} />
 					<Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 						<Link to="/formOptions">
-							<Button type="button" variant="contained" style={{ backgroundColor: '#4f89ee', color: 'black', borderRadius: '30px' }}>
+							<Button type="button" variant="contained" style={{ backgroundColor: '#4f89ee', color: 'black', borderRadius: '30px', marginTop: '5px' }}>
 								Subir salario
 							</Button>
 						</Link>
