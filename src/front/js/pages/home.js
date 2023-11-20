@@ -23,11 +23,11 @@ export const Home = () => {
 					<img src={rigoImageUrl} />
 				</p>
 
-				<Link to="/formOptions">
+				<Link to="/adminView">
 					<button type="button">Admin View</button>
 				</Link>
 
-				<Link to="/formOptions">
+				<Link to="/chargeCompany">
 					<button type="button">Charge Company</button>
 				</Link>
 

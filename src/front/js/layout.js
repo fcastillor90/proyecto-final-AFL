@@ -8,6 +8,9 @@ import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import { FormOptions } from "./component/formOptions"; //Lili
 // importar componentes de Fernando
+import { AdminView } from "./component/adminView";
+import ChargeCompany from "./component/chargeCompany";
+
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -29,6 +32,8 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<FormOptions />} path="/formOptions" />
+                        <Route element={<AdminView />} path="/adminView" />  {/*falta ponerla secreta*/}
+                        <Route element={<ChargeCompany />} path="/chargeCompany" />
                         <Route element={<Demo />} path="/demo" />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} />

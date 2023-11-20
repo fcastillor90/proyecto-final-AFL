@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -19,7 +19,7 @@ const rows = [
     createData('empresa 5', 16 / 7 / 2022, 'Software Engineer', 'Front End', '$18.000.000'),
 ];
 
-export default function BasicTable() {
+export default function ChargeCompany() {
     return (
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">

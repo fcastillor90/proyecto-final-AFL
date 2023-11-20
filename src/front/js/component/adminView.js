@@ -374,3 +374,6 @@ export default function EnhancedTable() {
     </Box>
   );
 }
+
+
+export { EnhancedTable as AdminView };
