@@ -9,6 +9,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import CompanyCard from "../component/companyCard";
 
 
 
@@ -43,7 +44,7 @@ export const Home = () => {
 
 			<BasicTabs />
 
-			<p>graficos</p>>
+			<p>graficos</p>
 		</div>
 	);
 };
@@ -54,6 +55,14 @@ export const Home = () => {
 function CustomTabPanel(props) {
 	const { children, value, index, ...other } = props;
 
+	// data de ejemplo
+	const cardData = [
+		{ companyName: 'Company 1', average: 15, entries: 30 },
+		{ companyName: 'Company 2', average: 10, entries: 25 },
+		// agregar mas cards
+	];
+
+
 	return (
 		<div
 			role="tabpanel"
@@ -63,10 +72,17 @@ function CustomTabPanel(props) {
 			{...other}
 		>
 			{value === index && (
-				<Box sx={{ p: 3 }}>
-					<Typography>{children}</Typography>
-				</Box>
-			)}
+                <Box sx={{ p: 3 }}>
+                    <Typography>
+                        {/* Map through the card data and render CompanyCard */}
+                        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+                            {cardData.map((card, index) => (
+                                <CompanyCard key={index} {...card} />
+                            ))}
+                        </div>
+                    </Typography>
+                </Box>
+            )}
 		</div>
 	);
 }
@@ -92,23 +108,23 @@ export default function BasicTabs() {
 	};
 
 	return (
-		<div className="ms-5">
+		<div className="mx-auto w-75">
 			<Box sx={{ width: '100%', margin: 'auto' }}>
 				<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
 					<Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-						<Tab label="Item One" {...a11yProps(0)} />
-						<Tab label="Item Two" {...a11yProps(1)} />
-						<Tab label="Item Three" {...a11yProps(2)} />
+						<Tab label="Categoria Rol 1" {...a11yProps(0)} />
+						<Tab label="Categoria Rol 2" {...a11yProps(1)} />
+						<Tab label="Categoria Rol 3" {...a11yProps(2)} />
 					</Tabs>
 				</Box>
 				<CustomTabPanel value={value} index={0}>
-					Item One
+					Categoria Rol 1
 				</CustomTabPanel>
 				<CustomTabPanel value={value} index={1}>
-					Item Two
+					Categoria Rol 2
 				</CustomTabPanel>
 				<CustomTabPanel value={value} index={2}>
-					Item Three
+					Categoria Rol 3
 				</CustomTabPanel>
 			</Box>
 		</div>
