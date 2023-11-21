@@ -10,6 +10,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import CompanyCard from "../component/companyCard";
+import HorizontalBars from "../component/graficos";
 
 
 
@@ -45,6 +46,8 @@ export const Home = () => {
 			<BasicTabs />
 
 			<p>graficos</p>
+			
+			<HorizontalBars />
 		</div>
 	);
 };
@@ -57,8 +60,14 @@ function CustomTabPanel(props) {
 
 	// data de ejemplo
 	const cardData = [
-		{ companyName: 'Company 1', average: 15, entries: 30 },
-		{ companyName: 'Company 2', average: 10, entries: 25 },
+		{ companyName: 'Compañia 1', average: 15, entries: 30 },
+		{ companyName: 'Compañia 2', average: 10, entries: 25 },
+		{ companyName: 'Compañia 3', average: 12, entries: 95 },
+		{ companyName: 'Compañia 4', average: 9, entries: 110 },
+		{ companyName: 'Compañia 5', average: 7, entries: 3 },
+		{ companyName: 'Compañia 6', average: 11, entries: 9 },
+		{ companyName: 'Compañia 7', average: 12, entries: 19 },
+		{ companyName: 'Compañia 8', average: 11, entries: 25 },
 		// agregar mas cards
 	];
 
