@@ -28,6 +28,7 @@ const Layout = () => {
     const basename = process.env.BASENAME || "";
 
     if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL />;
+    const isAuthenticated = localStorage.getItem('user') !== null;
 
     return (
         <div>

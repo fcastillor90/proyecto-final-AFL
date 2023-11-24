@@ -47,7 +47,7 @@ export const Home = () => {
 
 			<p>graficos</p>
 			
-			<HorizontalBars />
+			<HorizontalBars className="mb-4"/>
 		</div>
 	);
 };

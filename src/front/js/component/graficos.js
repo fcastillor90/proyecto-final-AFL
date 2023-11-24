@@ -4,7 +4,7 @@ import { BarChart } from '@mui/x-charts/BarChart';
 const chartSetting = {
     xAxis: [
         {
-            label: 'rainfall (mm)',
+            label: 'salario (USD)',
         },
     ],
     width: 608,
