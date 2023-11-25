@@ -1,3 +1,3 @@
 release: pipenv run upgrade
-web: gunicorn -b 0.0.0.0:$PORT wsgi:app
+web: gunicorn -b 0.0.0.0:$PORT app:app
 
