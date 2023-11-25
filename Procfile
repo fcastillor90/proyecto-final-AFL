@@ -1,3 +1,3 @@
 release: pipenv run upgrade
-web: python -m dotenv gunicorn wsgi --chdir ./src/
+web: gunicorn -b 0.0.0.0:$PORT wsgi:app
 
