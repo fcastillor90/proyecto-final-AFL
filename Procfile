@@ -1,2 +1,2 @@
 release: pipenv run upgrade
-web: gunicorn wsgi --chdir ./src/
+web: python -m dotenv -y && gunicorn wsgi --chdir ./src/
